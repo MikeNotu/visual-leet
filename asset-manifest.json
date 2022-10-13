@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/visual-leet/static/css/main.073c9b0a.css",
+    "main.js": "/visual-leet/static/js/main.61b52beb.js",
+    "static/js/787.9f715d98.chunk.js": "/visual-leet/static/js/787.9f715d98.chunk.js",
+    "index.html": "/visual-leet/index.html",
+    "main.073c9b0a.css.map": "/visual-leet/static/css/main.073c9b0a.css.map",
+    "main.61b52beb.js.map": "/visual-leet/static/js/main.61b52beb.js.map",
+    "787.9f715d98.chunk.js.map": "/visual-leet/static/js/787.9f715d98.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.61b52beb.js"
+  ]
+}
