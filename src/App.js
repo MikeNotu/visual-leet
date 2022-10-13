@@ -1,10 +1,10 @@
 import "./App.css";
-import TwoSum0001 from "./components/TwoSum0001";
+import Leet0001TwoSum from "./components/Leet0001TwoSum";
 
 function App() {
   return (
     <div className="App">
-      <TwoSum0001 />
+      <Leet0001TwoSum />
     </div>
   );
 }
