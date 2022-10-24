@@ -25,6 +25,12 @@ function Leet0001TwoSum() {
   const [result, setResult] = useState(null);
 
   useEffect(() => {
+    if (result !== null) {
+      console.log("test: ", JSON.stringify(result));
+    }
+  }, [result]);
+
+  useEffect(() => {
     result === null &&
       setTimeout(() => {
         const neededValue = target - nums[counter];
@@ -56,8 +62,27 @@ function Leet0001TwoSum() {
         each input would have exactly one solution, and you may not use the same
         element twice. You can return the answer in any order.
       </h4>
-      {/* <p>Input: nums = {JSON.stringify(nums)}</p>
-      <p>target = {JSON.stringify(target)}</p> */}
+      <p>Input: nums = {JSON.stringify(nums)}</p>
+      {result != null
+        ? nums.map((num) => {
+            return (
+              <p
+                className={`${
+                  nums !== null
+                    ? nums[result[0]] === num
+                      ? "first"
+                      : nums[result[1]] === num
+                      ? "second"
+                      : ""
+                    : ""
+                }`}
+              >
+                {num}
+              </p>
+            );
+          })
+        : null}
+      <p>target = {JSON.stringify(target)}</p>
       <p>Number of Iterations: {counter}</p>
       <p>{JSON.stringify(previousValues)}</p>
       <p>
