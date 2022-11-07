@@ -63,8 +63,10 @@ function Leet0001TwoSum() {
         element twice. You can return the answer in any order.
       </h4>
       <p>Input: nums = {JSON.stringify(nums)}</p>
-      {result != null
-        ? nums.map((num) => {
+      {result != null ? (
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <p>{`[`}</p>
+          {nums.map((num) => {
             return (
               <p
                 className={`${
@@ -77,11 +79,21 @@ function Leet0001TwoSum() {
                     : ""
                 }`}
               >
-                {num}
+                {num}&nbsp;
               </p>
             );
-          })
-        : null}
+          })}
+          <p>{`]`}</p>
+        </div>
+      ) : (
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <p>{`[`}</p>
+          {nums.map((num) => {
+            return <p>{num}&nbsp;</p>;
+          })}
+          <p>{`]`}</p>
+        </div>
+      )}
       <p>target = {JSON.stringify(target)}</p>
       <p>Number of Iterations: {counter}</p>
       <p>{JSON.stringify(previousValues)}</p>
